@@ -1,0 +1,250 @@
+
+
+
+
+/*for both pages */
+/*body {
+    background-color: teal;
+}
+*/
+/* importing google fonts onto webpage */
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+/* importing logos */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+header {
+    background-color: gray;
+    text-align: center;
+}
+p {
+    color: #777777;
+}
+h1 {
+    color: #4aaaa5;
+}
+h2 {
+    color: #4aaaa5;
+}
+
+/* for portfolio page*/
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #dddddd;   
+}
+#headerP{
+    background-color: #ffffff;
+    border-color:#cccccc;
+    font-family:'Georgia', Times, Times New Roman, serif;
+    height: 50px;
+    display: block;
+    color: #dddddd;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    z-index: 2;
+    position: relative;
+    margin-left: 5px;
+    /* margin-right:5px; */
+
+}
+/* default link */
+#headerP a {
+    color: #777777 ;
+    margin-left: 5px;
+    padding-right: 15px;
+}
+#headerP a:hover {
+     color: #4aaaa5;
+}
+/*   not working
+#headerP a:active  {
+    color: purple;
+}
+*/
+#headerP a:focus {
+    color: pink;
+}
+#headerP #myName {
+    left: 50px;
+    background-color: #4aaaa5;
+    width: 100px;
+    height: 100%;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    bottom:0px;
+    font-family: 'Sacramento';
+}
+#headerP #myName.text{
+    display: flex;
+    justify-content: center;
+}
+#myName p{
+    padding-top: 10px;
+    color: white;
+}
+#sectionP {
+    background-color: #ffffff;
+    height: 960px;
+    width: 960px;
+    /* display: block; */
+    border-color: #dddddd;
+   /*margin top and bottom 0, left and right split evenly */
+    margin: 0 auto;
+}
+#profilePic {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 4px;
+}
+#footerP{
+    background-color: #666666;
+    width: 100%;
+    height: 30px;
+    clear: both; 
+    /* displays footer away from the floaterz */
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* keeps footer fixed at bottom */
+    text-align: center;
+    z-index: 2;
+}
+/*
+#navBarP{
+    background: #4aaaa5;
+    display: block;
+    height:50px;
+    width:auto;
+    padding: 35px;
+}
+*/
+/*
+#articleP {   
+    color: '#ebebeb';
+    background: #4aaaa5; 
+    height: 20px;
+}
+*/
+/*
+#asideP {
+    background: #4aaaa5;
+    float: right;
+    width: 50%;
+    margin: 20px;
+    height: 40px;
+}
+/*Portfolio gallery page */
+
+
+
+
+#tableG {
+    width:700px;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    padding: 0 auto;
+    text-align: center;
+
+}
+#tableName {
+   /* display: flex;
+   justify-items: center; */
+   /* text-align: left; */
+   margin: 0 auto;
+   background-color: white;
+   width: 700px;
+   display: inline-block;
+   display: flex;
+   justify-content: center;
+}
+#tableName h2 {
+    text-align: left;
+}
+.picG {
+   height: 200px;
+   width:180px;
+   margin-top: 8px;
+   vertical-align: middle;
+}
+
+.gallery{
+    position: relative;
+    display: inline-block;
+    margin: 8px;
+}
+.gallery .projectName{
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 8px;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    text-align: center;
+    width: 100%;
+    background-color: #4aaaa5;
+}
+
+
+/*  Contact form      */
+#mainF {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-color: #dddddd; 
+}
+#submitF{
+    width: 53px;
+    background-color: #4aaaa5;
+}
+textarea{
+    height:200px;
+    width:70%
+}
+#mainF span {
+    color: #777777;
+    display: block;
+    font-display: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+/*student bio page */
+#lovePic {
+    height: 200px;
+    width: 200px;
+    /* center the pict- also not working */
+    margin-left: auto;
+    margin-right:auto;
+    float: left;
+    margin: 10px;
+}
+.container {
+    float: left;
+    width: 75%;
+}
+.contactInfo {
+    float: right;
+}
+
+
+
+/*   creates empty elements. look up 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+ }
+ */
