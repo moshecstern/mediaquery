@@ -3,6 +3,7 @@
 
 
 /*for both pages */
+
 /*body {
     background-color: teal;
 }
@@ -11,6 +12,8 @@
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 /* importing logos */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+
+/* normal page  -------------------------------------------- */
 header {
     background-color: gray;
     text-align: center;
@@ -55,7 +58,6 @@ body {
     right: 75px;
 }
 
-/* default link */
 #headerP a {
     color: #777777 ;
     margin-left: 5px;
@@ -125,35 +127,6 @@ body {
     text-align: center;
     z-index: 2;
 }
-/*
-#navBarP{
-    background: #4aaaa5;
-    display: block;
-    height:50px;
-    width:auto;
-    padding: 35px;
-}
-*/
-/*
-#articleP {   
-    color: '#ebebeb';
-    background: #4aaaa5; 
-    height: 20px;
-}
-*/
-/*
-#asideP {
-    background: #4aaaa5;
-    float: right;
-    width: 50%;
-    margin: 20px;
-    height: 40px;
-}
-/*Portfolio gallery page */
-
-
-
-
 #tableG {
     width:700px;
     height: 100%;
@@ -249,34 +222,107 @@ textarea{
 
 
 
+/*mediaquery and viewport */
+@-ms-viewport{
+    width: device-width;
+  }
+  /* full size -----------------------------------------------*/
+  @media screen and (max-width: 980px){
+      #headerP{
+        display: flex;
+        justify-content: flex-end; 
+      }
+      #sectionP {
+        width: 750px;
+        height: 450px;
+      }
+      .white-bg {
+        width: 66%;
+      }
+      #tableG{
+          width: auto;
+      }
+      #mainF{
+          max-width:970px;
+      }
+     
 
+  }
+/* tablet size --------------------------------------------- */
 
+@media screen and (max-width: 768px){
+    #articleP {
+        max-width: 760px; 
+    }
+    #tableG{
+        max-width: 400px;
+    }
+    #sectionP {
+        max-width: 760px;
+    }
+    #mainF{
+        max-width: 760px;
+    }
 
-/* ignore!!!! for another project */
-/*student bio page */
-#lovePic {
-    height: 200px;
-    width: 200px;
-    /* center the pict- also not working */
-    margin-left: auto;
-    margin-right:auto;
-    float: left;
-    margin: 10px;
 }
-.container {
-    float: left;
-    width: 75%;
+
+/* phone size ----------------------------------------------- */
+
+@media screen and (max-width:640px){
+    #headerP{
+        position: none;
+        display: flex;
+    flex-direction: column;
+    padding: 0%;
+    }
+    #myName{
+        display: block;
+        width: 100%;
+        /* position:unset; */
+    }
+    #headerP #myName {
+        height: unset;
+        display: block;
+        width: 100%;
+        position: unset;
+        left:0;
+        /* margin-bottom: 10px; */
+        margin:0 auto;
+    }
+    #profilePic{
+        margin-left: 25%;
+        float: none;
+    }
+    #sectionP{
+        max-width: 90%;
+        height: 65%;
+    }
+    #articleP{
+        width: 66%; 
+    }
+
+    #linksH{
+        width: 100%;
+        position: unset;
+        background-color: #fff;
+        padding-top: 5px;
+    }
+    
+    
+   #mainF{
+       max-width: 75%;
+   }
+
+   .gallery{
+       display: block;
+   }
+   td{
+    display:block;
 }
-.contactInfo {
-    float: right;
+
+   /* #footerP{
+
+   } */
 }
 
 
-
-/*   creates empty elements. look up 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
- }
- */
